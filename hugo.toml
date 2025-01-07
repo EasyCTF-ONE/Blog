@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://easyctf-one.github.io/'
 title = 'EasyCTF Blog'
 theme = 'hugo-theme-reimu'
 languageCode = 'zh-CN'
