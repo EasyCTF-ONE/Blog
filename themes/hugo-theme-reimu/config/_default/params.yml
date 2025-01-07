@@ -27,10 +27,10 @@ dateFormat: "2006-01-02"
 timeFormat: "2006-01-02 15:04:05"
 
 author: EasyCTF
-description: "少女祈祷中..."
-subtitle: "少女祈祷中..."
+description: "Learning CTF..."
+subtitle: "Learning CTF..."
 
-banner: "images/banner.webp"
+banner: "images/banner.jpg"
 # You can also write it in the form of the following url
 # banner: "https://example.com"
 
@@ -45,7 +45,7 @@ banner_srcset:
     - src: "images/banner.webp"
       media: "(min-width: 800px)"
 
-avatar: "avatar.webp"
+avatar: "avatar.png"
 
 # Open Graph
 open_graph:
@@ -299,8 +299,8 @@ algolia_search:
 ########################################
 
 preloader:
-  enable: true
-  text: 少女祈祷中...
+  enable: false
+  text: Learning CTF...
   icon: # default use inline svg for fast speed, you can use a image url, like '/images/taichi.png'
 
 # see https://github.com/D-Sketon/aos.js

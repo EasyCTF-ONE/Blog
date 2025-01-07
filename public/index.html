@@ -24,7 +24,7 @@
 </title>
 <meta
   name="description"
-  content="少女祈祷中..."
+  content="Learning CTF..."
 />
 
 
@@ -93,23 +93,13 @@
 
 
 
-  
-
-
-
-
-
-
- <link rel="stylesheet" href="/css/loader.css" />
-
-
 
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="EasyCTF Blog" />
   <meta
     property="og:description"
-    content="少女祈祷中..."
+    content="Learning CTF..."
   />
   <meta property="og:url" content="http://localhost:1313/" />
   <meta
@@ -210,48 +200,6 @@
   </head>
   <body>
     
-  <div id='loader'>
-    <div class="loading-left-bg loading-bg"></div>
-    <div class="loading-right-bg loading-bg"></div>
-    <div class="spinner-box">
-      <div class="loading-taichi">
-        
-          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
-            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="#ff5252" />
-            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
-          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="#ff5252" />
-          </svg>
-        
-      </div>
-      <div class="loading-word">少女祈祷中...</div>
-    </div>
-  </div>
-  </div>
-  <script>
-    var time = null;
-    var startLoading = () => {
-      time = Date.now();
-      document.getElementById('loader').classList.remove("loading");
-    }
-    var endLoading = () => {
-      if (!time) {
-        document.body.style.overflow = 'auto';
-        document.getElementById('loader').classList.add("loading");
-      } else {
-        if (Date.now() - time > 500) {
-          time = null;
-          document.body.style.overflow = 'auto';
-          document.getElementById('loader').classList.add("loading");
-        } else {
-          setTimeout(endLoading, 500 - (Date.now() - time));
-          time = null;
-        }
-      }
-    }
-    window.addEventListener('DOMContentLoaded', endLoading);
-    document.getElementById('loader').addEventListener('click', endLoading);
-  </script>
-
 
 <div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
 </div>
@@ -323,7 +271,7 @@
       
     </picture>
     
-      <img fetchpriority="high" src="/images/banner.webp" alt="EasyCTF Blog">
+      <img fetchpriority="high" src="/images/banner.jpg" alt="EasyCTF Blog">
     
   
 
@@ -349,7 +297,7 @@
         
         <h2 id="subtitle-wrap" data-aos="slide-down">
           
-            <a href="/" id="subtitle">少女祈祷中...</a>
+            <a href="/" id="subtitle">Learning CTF...</a>
           
         </h2>
       
@@ -371,19 +319,19 @@
         
 <div class="sidebar-author">
   <img
-    data-src="/avatar/avatar.webp"
+    data-src="/avatar/avatar.png"
     data-sizes="auto"
     alt="EasyCTF"
     class="lazyload"
   />
   <div class="sidebar-author-name">EasyCTF</div>
-  <div class="sidebar-description">少女祈祷中...</div>
+  <div class="sidebar-description">Learning CTF...</div>
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
     
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">5</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -496,7 +444,23 @@
         <ul>
           
             <li>
-              <a href="http://localhost:1313/post/1/">1</a>
+              <a href="http://localhost:1313/post/docker/">docker</a>
+            </li>
+          
+            <li>
+              <a href="http://localhost:1313/post/linux%E7%9A%84dns%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">Linux的DNS服务器搭建</a>
+            </li>
+          
+            <li>
+              <a href="http://localhost:1313/post/rce%E7%BB%95%E8%BF%87%E6%80%BB%E7%BB%93/">RCE绕过总结</a>
+            </li>
+          
+            <li>
+              <a href="http://localhost:1313/post/web%E5%AE%89%E5%85%A8/">Web安全</a>
+            </li>
+          
+            <li>
+              <a href="http://localhost:1313/post/%E6%90%AD%E5%BB%BActf%E5%B9%B3%E5%8F%B0/">搭建CTF平台</a>
             </li>
           
         </ul>
@@ -528,8 +492,8 @@
     
       <a
         class="post-link"
-        href="http://localhost:1313/post/1/"
-        aria-label="1"
+        href="http://localhost:1313/post/docker/"
+        aria-label="docker"
       >
       </a>
     
@@ -545,7 +509,7 @@
           <img
             data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
             data-sizes="auto"
-            alt="1"
+            alt="docker"
             class="lazyload"
           />
         
@@ -559,17 +523,286 @@
         >
         <span
           ><span class="icon-pencil"></span
-          >0 字</span
+          >189 字</span
         >
         <span
           ><span class="icon-clock"></span
-          >0 分钟</span
+          >1 分钟</span
         >
       </div>
-      <h2 class="post-title">1</h2>
+      <h2 class="post-title">docker</h2>
       <article class="post-article">
         
-          
+           一 安装docker 阅读官方文档进行安装https://docs.docker.com/engine/install/ubuntu/
+设置 Docker 的apt存储库
+sudo apt-get update sudo apt-get install ca-certificates curl sudo install -m 0755 -d /etc/apt/keyrings sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc sudo chmod a+r …
+        
+      </article>
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap-right
+    "
+    data-aos="fade-up"
+  >
+    
+      <a
+        class="post-link"
+        href="http://localhost:1313/post/linux%E7%9A%84dns%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/"
+        aria-label="Linux的DNS服务器搭建"
+      >
+      </a>
+    
+    
+    <div
+      class="
+        post-cover-right
+      "
+    >
+      
+        
+        
+          <img
+            data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+            data-sizes="auto"
+            alt="Linux的DNS服务器搭建"
+            class="lazyload"
+          />
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-01-07</span
+        >
+        <span
+          ><span class="icon-pencil"></span
+          >437 字</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >3 分钟</span
+        >
+      </div>
+      <h2 class="post-title">Linux的DNS服务器搭建</h2>
+      <article class="post-article">
+        
+           DNS域名解析服务 准备工作 设置服务器网络参数，设置主机名 网络参数 参见配置文件： /etc/sysconfig/network-scripts/ifcfg-ens33 DEVICE=ens33	设备名称 NAME=ens33	网卡名称 BOOTPROTO=static	static为静态ip地址 ONBOOT=yes	开机是否激活网卡（yes激活，no禁用） IPADDR=	配置IP地址 NETMASK=	配置子网掩码 PREFIX=	配置子网掩码(位数) GATEWAY=	配置默认网关 DNS1=	配置首选DNS地址 注意：如有备用DNS地址的配置项为DNS2 注意：网卡配置文件内， …
+        
+      </article>
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap-left
+    "
+    data-aos="fade-up"
+  >
+    
+      <a
+        class="post-link"
+        href="http://localhost:1313/post/rce%E7%BB%95%E8%BF%87%E6%80%BB%E7%BB%93/"
+        aria-label="RCE绕过总结"
+      >
+      </a>
+    
+    
+    <div
+      class="
+        post-cover-left
+      "
+    >
+      
+        
+        
+          <img
+            data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+            data-sizes="auto"
+            alt="RCE绕过总结"
+            class="lazyload"
+          />
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-01-07</span
+        >
+        <span
+          ><span class="icon-pencil"></span
+          >207 字</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 分钟</span
+        >
+      </div>
+      <h2 class="post-title">RCE绕过总结</h2>
+      <article class="post-article">
+        
+           常见可代替命令 cat 查看文件内容
+more:一页一页的显示档案内容less:与 more 类似head:查看头几行tac:从最后一行开始显示，可以看出 tac 是 cat 的反向显示tail:查看尾几行nl：显示的时候，顺便输出行号od:以二进制的方式读取档案内容vi:一种编辑器，这个也可以查看vim:一种编辑器，这个也可以查看sort:可以查看uniq:可以查看ls：查看目录dir：查看目录空格绕过 &gt; &lt; &lt;&gt; 重定向符%20(space)%09(tab)$IFS$9 ${IFS}（最好用这个）$IFS %0a …
+        
+      </article>
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap-right
+    "
+    data-aos="fade-up"
+  >
+    
+      <a
+        class="post-link"
+        href="http://localhost:1313/post/web%E5%AE%89%E5%85%A8/"
+        aria-label="Web安全"
+      >
+      </a>
+    
+    
+    <div
+      class="
+        post-cover-right
+      "
+    >
+      
+        
+        
+          <img
+            data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+            data-sizes="auto"
+            alt="Web安全"
+            class="lazyload"
+          />
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-01-07</span
+        >
+        <span
+          ><span class="icon-pencil"></span
+          >1616 字</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >8 分钟</span
+        >
+      </div>
+      <h2 class="post-title">Web安全</h2>
+      <article class="post-article">
+        
+           php基本特性 弱类型比较
+1.字符串和数字比较，字符串会被转换成数字
+&ldquo;admin&rdquo; == 0 true
+admin被转换成数字，由于admin是纯字符串，转换失败 int(admin)=0
+2.混合字符串转换成数字，看字符串的第一个
+&ldquo;1admin&rdquo; == 1 true
+3.字段串开头以xex开头，x代表数字会被转换成科学计数法
+1e9 1x10⁹
+对输入长度限制，又需要＞= …
+        
+      </article>
+    </div>
+  </div>
+</div>
+
+  
+    
+
+
+
+
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap-left
+    "
+    data-aos="fade-up"
+  >
+    
+      <a
+        class="post-link"
+        href="http://localhost:1313/post/%E6%90%AD%E5%BB%BActf%E5%B9%B3%E5%8F%B0/"
+        aria-label="搭建CTF平台"
+      >
+      </a>
+    
+    
+    <div
+      class="
+        post-cover-left
+      "
+    >
+      
+        
+        
+          <img
+            data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+            data-sizes="auto"
+            alt="搭建CTF平台"
+            class="lazyload"
+          />
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-01-07</span
+        >
+        <span
+          ><span class="icon-pencil"></span
+          >275 字</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >2 分钟</span
+        >
+      </div>
+      <h2 class="post-title">搭建CTF平台</h2>
+      <article class="post-article">
+        
+           GZCTF 在当前文件夹下（就是你GZCTF靶场的配置目录），创建 appsettings.json：
+vim appsettings.json
+{ &#34;AllowedHosts&#34;: &#34;*&#34;, &#34;ConnectionStrings&#34;: { &#34;Database&#34;: &#34;Host=db:5432;Database=gzctf;Username=postgres;Password=@glj20030528&#34;, // 此处Password内容可以自定义（安全起见，至少包含数字及字母大小写） …
         
       </article>
     </div>
@@ -615,6 +848,18 @@
   
   
 
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
 
 
 <footer id="footer">
@@ -646,7 +891,7 @@
       <div>
         <span class="icon-brush"
           >&nbsp;
-            0
+            2.7k
           </span
         >
         &nbsp;|&nbsp;
@@ -654,7 +899,7 @@
           
           
 
-          00:00
+          00:15
         </span>
       </div>
     
@@ -694,19 +939,19 @@
       
 <div class="sidebar-author">
   <img
-    data-src="/avatar/avatar.webp"
+    data-src="/avatar/avatar.png"
     data-sizes="auto"
     alt="EasyCTF"
     class="lazyload"
   />
   <div class="sidebar-author-name">EasyCTF</div>
-  <div class="sidebar-description">少女祈祷中...</div>
+  <div class="sidebar-description">Learning CTF...</div>
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
     
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">5</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -1024,7 +1269,7 @@
           title: "EasyCTF Blog",
           url: "http:\/\/localhost:1313\/",
           description: "",
-          cover: "http:\/\/localhost:1313\/images\/banner.webp",
+          cover: "http:\/\/localhost:1313\/images\/banner.jpg",
         };
       </script>
     

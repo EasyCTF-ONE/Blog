@@ -1,0 +1,8 @@
+- name: EasyCTF
+  url: http://www.easyctf.top/
+  desc: solo 建站
+  image: https://d-sketon.github.io/avatar/avatar.webp
+- name: EasyCTF
+  url: https://d-sketon.github.io/astro-theme-reimu/
+  desc: Astro 建站
+  image: https://d-sketon.github.io/avatar/avatar.webp
